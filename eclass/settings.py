@@ -12,9 +12,9 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'ot3l1wd0%n1@-sd3e@^s*p4%(%w27fu7@)$9mb-qs*e(pq#kbj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['eqlass-studio.herokuapp.com', 'localhost']
 
 
 # Application definition
