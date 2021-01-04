@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    div.row>#video iframe{
+        width: 100%;
+    }
+</style>
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner text-center">
+                        <div class="breadcrumb_iner_item">
+                            <h2>video gallery</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    <!-- Gallery section -->
+    <!------<div class="gallery_part section_padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-5 offset-lg-2">
+                    <div class="section_tittle">
+                        <p>alltime video</p>
+                        <h2>Video display</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="portfolio-filter filters">
+                        <ul>
+                            <li data-filter="all">All videos</li>
+                            <li data-filter="1">wedding</li>
+                            <li data-filter="2">fashion</li>
+                            <li data-filter="3">model</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>----------->
+	<section class=" gallery-section">
+		<div class=" row gallery-gird">
+			{% for i in content.video %}
+			<div id="video" class="col-lg-4 col-xl-3 col-sm-6">
+					{{ i.content|safe }}
+			</div>
+			{% endfor %}
+			
+		</div>
+		
+	</section>
+	<!-- Gallery section end -->
+
+{% endblock content %}

@@ -1,0 +1,24 @@
+ /* Make the image fully responsive */
+ .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+   /** background-attachment: fixed;**/
+    background-size: 100% 100%;
+  }
+#video-container a{
+    margin-top: 5px;
+}
+.row #video-div{
+    margin-bottom: 10px;
+}
+.row #video{
+    margin: 0 auto;
+  }
+li#service-list{
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+  
